@@ -1,5 +1,14 @@
 import api from "./api";
+export const createUser = async (formData) => {
 
+    const response = await api.post(
+        "/users",
+        formData
+    );
+
+    return response.data;
+
+};
 export const getUsers = async () => {
 
     const response = await api.get("/users");

@@ -21,7 +21,7 @@ import NotFound from "./pages/NotFound";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 import MainLayout from "./layouts/MainLayout";
-
+import AddUser from "./pages/AddUser";
 function App() {
     return (
         <Routes>
@@ -91,11 +91,15 @@ function App() {
                     path="/users"
                     element={<Users />}
                 />
-
+<Route
+    path="/users/add"
+    element={<AddUser />}
+/>
                 <Route
                     path="/users/edit/:id"
                     element={<EditUser />}
                 />
+                
             </Route>
 
             {/* 404 */}

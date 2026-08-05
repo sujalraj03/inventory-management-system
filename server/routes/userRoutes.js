@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const { getUsers,
+     createUser,
      getUserById,
       updateUser,
         deleteUser,
@@ -12,7 +13,12 @@ const {
     protect,
     authorize,
 } = require("../middleware/authMiddleware");
-
+router.post(
+    "/",
+    protect,
+    authorize("admin"),
+    createUser
+);
 router.get(
     "/",
     protect,
