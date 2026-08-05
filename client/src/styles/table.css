@@ -1,0 +1,51 @@
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th {
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.custom-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.custom-table tbody tr:hover {
+    background: #dbeafe;
+    transition: 0.3s;
+}
+
+.action-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.edit-btn {
+    background: #2563eb;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
