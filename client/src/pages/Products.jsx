@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts,deleteProduct } from "../services/productService";
 import { useNavigate } from "react-router-dom";
 import "../styles/table.css";
+import { toast } from "react-toastify";
 const Products = () => {
 
     const [products, setProducts] = useState([]);

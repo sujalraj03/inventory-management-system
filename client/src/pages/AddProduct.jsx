@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getCategories } from "../services/categoryService";
 import { createProduct } from "../services/productService";
 import { useNavigate } from "react-router-dom";
-
+import { toast } from "react-toastify";
 const AddProduct = () => {
      const navigate = useNavigate();
     const [formData, setFormData] = useState({

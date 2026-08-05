@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getUsers,deleteUser } from "../services/userService";
 import { useNavigate } from "react-router-dom";
 import "../styles/table.css";
+import { toast } from "react-toastify";
 
 const Users = () => {
 
