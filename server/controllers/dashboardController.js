@@ -1,6 +1,6 @@
 const Product = require("../models/Product");
 const Category = require("../models/Category");
-const User = require("../models/User");
+const User = require("../models/user");
 
 const getDashboardStats = async (req, res) => {
 
